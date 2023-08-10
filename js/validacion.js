@@ -15,7 +15,7 @@ let email = document.getElementById("email").value;
 let chbx = document.getElementById("terminos").checked;
 
     var inputName = document.querySelector("#password1").value;
-    if (inputName.length >= 6 && (document.querySelector("#password1").value == document.querySelector("#password2").value) && nombre !== "" && apellido !== "" && email !== "" && chbx) {
+    if (inputName.length >= 6 && (document.querySelector("#password1").value == document.querySelector("#password2").value) && (nombre !== "") && (apellido !== "") && (email !== "") && chbx) {
          showAlertSuccess(); 
 }
 else {
