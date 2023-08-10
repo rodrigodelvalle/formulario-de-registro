@@ -6,6 +6,7 @@ function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
 
+
 function verificarPassword() {
 
 let nombre = document.getElementById("nombre").value;
@@ -22,3 +23,15 @@ else {
 }}
 
 // nueva rama NicoN
+
+const checkbox = document.getElementById ("terminos");
+
+checkbox.addEventListener('click', function(){
+    if (checkbox.checked) {
+        showAlertSuccess ()
+    }
+    else {
+        showAlertError ()
+    }
+})
+
